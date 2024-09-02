@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tip Calculator</h1>
+      <div class="input-section">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+      </div>
+      <div class="slider-section">
+        <label for="tip-range">Tip %:</label>
+        <input
+          type="range"
+          id="tip-range"
+          min="0"
+          max="100"
+          step="1"
+          value="0"
+        />
+        <span id="tip-percentage">0%</span>
+      </div>
+      <div class="results">
+        <div class="result-row">
+          <strong>Tip Amount:</strong> <span id="tip-amount">$0.00</span>
+        </div>
+        <div class="result-row">
+          <strong>Total Bill with Tip:</strong>
+          <span id="total-bill">$0.00</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
